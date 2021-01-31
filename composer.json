@@ -1,0 +1,38 @@
+{
+    "name": "gabbanaesteban/mastermind",
+    "description": "Mastermind game implementation in PHP",
+    "keywords": [
+        "mastermind",
+        "game"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Esteban De la Rosa",
+            "email": "gabbanaesteban@gmail.com",
+            "homepage": "https://estebandelarosa.dev",
+            "role": "Software Engineer"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.0",
+        "vimeo/psalm": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gabbanaesteban\\Mastermind\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest",
+        "test-coverage": "./vendor/bin/pest --coverage --min=90",
+        "analyze": "./vendor/bin/psalm"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
