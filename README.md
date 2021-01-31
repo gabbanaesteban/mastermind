@@ -1,6 +1,6 @@
 <p align="center"><img src="/art/socialcard.png" alt="Social Card of Mastermind"></p>
 
-# Mastermind game implementation
+# Mastermind
 
 [![Latest Stable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v)](//packagist.org/packages/gabbanaesteban/mastermind) [![Total Downloads](https://poser.pugx.org/gabbanaesteban/mastermind/downloads)](//packagist.org/packages/gabbanaesteban/mastermind) [![Latest Unstable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v/unstable)](//packagist.org/packages/gabbanaesteban/mastermind) [![License](https://poser.pugx.org/gabbanaesteban/mastermind/license)](//packagist.org/packages/gabbanaesteban/mastermind)
 
