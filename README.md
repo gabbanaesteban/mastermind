@@ -2,9 +2,7 @@
 
 # Mastermind game implementation
 
-[![Latest Version](https://img.shields.io/github/release/spatie/laravel-medialibrary.svg?style=flat-square)](https://github.com/spatie/laravel-medialibrary/releases)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/spatie/laravel-medialibrary/run-tests?label=tests)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-medialibrary.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-medialibrary)
+[![Latest Stable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v)](//packagist.org/packages/gabbanaesteban/mastermind) [![Total Downloads](https://poser.pugx.org/gabbanaesteban/mastermind/downloads)](//packagist.org/packages/gabbanaesteban/mastermind) [![Latest Unstable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v/unstable)](//packagist.org/packages/gabbanaesteban/mastermind) [![License](https://poser.pugx.org/gabbanaesteban/mastermind/license)](//packagist.org/packages/gabbanaesteban/mastermind)
 
 This package is an implementation of the game Mastermind.
 
@@ -56,4 +54,4 @@ composer test
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](/.github/LICENSE.md) for more information.
