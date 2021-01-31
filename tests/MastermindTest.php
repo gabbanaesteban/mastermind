@@ -86,8 +86,8 @@ it('supports associative array as guess', function () {
 });
 
 it('returns hints based on the given guess', function () {
-    $code = [ Color::YELLOW, Color::GREEN, Color::PINK, Color::YELLOW];
-    
+    $code = [Color::YELLOW, Color::GREEN, Color::PINK, Color::YELLOW];
+
     $mastermind = new Mastermind($code);
 
     expect($mastermind->getHints(array_fill(0, 4, Color::BLUE)))->toBe([]);
