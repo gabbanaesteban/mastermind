@@ -13,7 +13,7 @@ test('Example A', function () {
         Color::ORANGE, Color::YELLOW, Color::BLUE, Color::PURPLE
     ]);
 
-    expect($hints)->toMatchArray([Hint::WHITE, Hint::BLACK]);
+    expect($hints)->toBe([Hint::WHITE, Hint::BLACK]);
 });
 
 test('Example B', function () {
@@ -25,7 +25,7 @@ test('Example B', function () {
         Color::ORANGE, Color::YELLOW, Color::GREEN, Color::GREEN
     ]);
 
-    expect($hints)->toMatchArray([Hint::BLACK]);
+    expect($hints)->toBe([Hint::BLACK]);
 });
 
 test('Example C', function () {
@@ -37,7 +37,7 @@ test('Example C', function () {
         Color::PINK, Color::YELLOW, Color::GREEN, Color::ORANGE
     ]);
 
-    expect($hints)->toMatchArray([Hint::WHITE]);
+    expect($hints)->toBe([Hint::WHITE]);
 });
 
 test('Example D', function () {
@@ -49,5 +49,5 @@ test('Example D', function () {
         Color::GREEN, Color::PINK, Color::PINK, Color::ORANGE
     ]);
 
-    expect($hints)->toMatchArray([Hint::WHITE, Hint::BLACK]);
+    expect($hints)->toBe([Hint::WHITE, Hint::BLACK]);
 });
