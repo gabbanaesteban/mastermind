@@ -77,14 +77,15 @@ class Mastermind
         $hints = [];
 
         foreach ($guess as $key => $color) {
+            if ($color === $this->getCode()[$key]) {
+                $hints[$key] = Hint::BLACK;
+                continue;
+            }
+
             $codeKey = array_search($color, $this->getCode());
 
             if (false !== $codeKey && !isset($hints[$codeKey])) {
                 $hints[$codeKey] = Hint::WHITE;
-            }
-
-            if ($color === $this->getCode()[$key]) {
-                $hints[$key] = Hint::BLACK;
             }
         }
 
