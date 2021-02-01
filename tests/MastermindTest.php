@@ -39,13 +39,13 @@ it('returns the code used to instance Mastermind', function () {
     expect($mastermind->getCode())->toBe($code);
 });
 
-it('validates the given guess has 4 colors in order to create an instance', function () {
+it('validates the given guess has 4 colors in order to get hints', function () {
     Mastermind::withRandomCode()->getHints([
         Color::BLUE, Color::YELLOW, Color::PINK
     ]);
 })->throws(\InvalidArgumentException::class, 'The code should have a length of 4');
 
-it('validates the given guess has only valid colors in order to create an instance', function () {
+it('validates the given guess has only valid colors in order to get hints', function () {
     Mastermind::withRandomCode()->getHints([
         Color::BLUE, Color::YELLOW, 'ASD', Color::PINK
     ]);
