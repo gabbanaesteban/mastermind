@@ -2,7 +2,8 @@
 
 namespace Gabbanaesteban\Mastermind;
 
-class Color {
+class Color
+{
     public const PINK = 'pink';
     public const ORANGE = 'orange';
     public const YELLOW = 'yellow';
@@ -10,4 +11,3 @@ class Color {
     public const BLUE = 'blue';
     public const PURPLE = 'purple';
 }
-

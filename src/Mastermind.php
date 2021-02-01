@@ -11,7 +11,7 @@ class Mastermind
         Color::YELLOW,
         Color::GREEN,
         Color::BLUE,
-        Color::PURPLE
+        Color::PURPLE,
     ];
 
     protected array $code;
@@ -36,8 +36,6 @@ class Mastermind
 
     /**
      * Creates a new Mastermind instace with a random code
-     *
-     * @return self
      */
     public static function withRandomCode(): self
     {
@@ -61,8 +59,10 @@ class Mastermind
      * Returns an array with hints for the code based on the given guess.
      * This logic is based on Advanced Mastermind Instrctions
      * https://www.boardgamecapital.com/game_rules/mastermind.pdf
-     * Read it carefully as this is an "Extra-Challenging Edition" 
+     * Read it carefully as this is an "Extra-Challenging Edition"
+     *
      * @param string[] $guess
+     *
      * @return string[]
      */
     public function getHints(array $guess): array
@@ -79,7 +79,7 @@ class Mastermind
         foreach ($guess as $key => $color) {
             $codeKey = array_search($color, $this->getCode());
 
-            if ($codeKey !== false && !isset($hints[$codeKey])) {
+            if (false !== $codeKey && !isset($hints[$codeKey])) {
                 $hints[$codeKey] = Hint::WHITE;
             }
 
@@ -94,8 +94,8 @@ class Mastermind
 
     /**
      * @param string[] $code
+     *
      * @throws \InvalidArgumentException
-     * @return void
      */
     protected function validateCodeOrFail(array $code): void
     {
@@ -105,20 +105,20 @@ class Mastermind
 
     /**
      * @param string[] $code
+     *
      * @throws \InvalidArgumentException
-     * @return void
      */
     protected function validateLengthOrFail(array $code): void
     {
         if (!$this->hasRightLength($code)) {
-            throw new \InvalidArgumentException("The code should have a length of " . self::CODE_LENGTH);
+            throw new \InvalidArgumentException('The code should have a length of ' . self::CODE_LENGTH);
         }
     }
 
     /**
      * @param string[] $code
+     *
      * @throws \InvalidArgumentException
-     * @return void
      */
     protected function validateColorsOrFail(array $code): void
     {
@@ -130,20 +130,18 @@ class Mastermind
 
     /**
      * @param string[] $code
-     * @return boolean
      */
     protected function hasRightLength(array $code): bool
     {
-        return \count($code) === self::CODE_LENGTH;
+        return self::CODE_LENGTH === \count($code);
     }
 
     /**
      * @param string[] $code
-     * @return boolean
      */
     protected function hasValidColors(array $code): bool
     {
-        $filter = fn (string $color): bool => in_array($color, self::VALID_COLORS, true);
+        $filter = fn (string $color): bool => \in_array($color, self::VALID_COLORS, true);
         $validColors = array_filter($code, $filter);
 
         return \count($validColors) === \count($code);
