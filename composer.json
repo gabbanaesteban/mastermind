@@ -19,7 +19,7 @@
     },
     "require-dev": {
         "pestphp/pest": "^1.0",
-        "vimeo/psalm": "^4.4"
+        "phpstan/phpstan": "^0.12.70"
     },
     "autoload": {
         "psr-4": {
@@ -27,9 +27,16 @@
         }
     },
     "scripts": {
-        "test": "./vendor/bin/pest",
-        "test-coverage": "./vendor/bin/pest --coverage --min=90",
-        "analyze": "./vendor/bin/psalm"
+        "lint": "php-cs-fixer fix -v",
+        "test:lint": "php-cs-fixer fix -v --dry-run",
+        "test:types": "phpstan analyse src --ansi --memory-limit=0 --level=5",
+        "test:features": "./vendor/bin/pest --colors=always",
+        "test:coverage": "./vendor/bin/pest --coverage --min=90",
+        "test": [
+            "@test:lint",
+            "@test:types",
+            "@test:features"
+        ]
     },
     "config": {
         "sort-packages": true
