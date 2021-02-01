@@ -2,7 +2,7 @@
 
 # Mastermind
 
-[![Latest Stable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v)](//packagist.org/packages/gabbanaesteban/mastermind) [![Total Downloads](https://poser.pugx.org/gabbanaesteban/mastermind/downloads)](//packagist.org/packages/gabbanaesteban/mastermind) [![Latest Unstable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v/unstable)](//packagist.org/packages/gabbanaesteban/mastermind) [![License](https://poser.pugx.org/gabbanaesteban/mastermind/license)](//packagist.org/packages/gabbanaesteban/mastermind)
+[![Latest Stable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v)](//packagist.org/packages/gabbanaesteban/mastermind) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/gabbanaesteban/mastermind/tests?label=tests) [![Total Downloads](https://poser.pugx.org/gabbanaesteban/mastermind/downloads)](//packagist.org/packages/gabbanaesteban/mastermind) [![Latest Unstable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v/unstable)](//packagist.org/packages/gabbanaesteban/mastermind) [![License](https://poser.pugx.org/gabbanaesteban/mastermind/license)](//packagist.org/packages/gabbanaesteban/mastermind)
 
 This package is an implementation of the game Mastermind.
 
@@ -54,4 +54,4 @@ composer test
 
 ## License
 
-The MIT License (MIT). Please see [License File](/.github/LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
