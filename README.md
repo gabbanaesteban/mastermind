@@ -2,7 +2,7 @@
 
 # Mastermind
 
-[![Latest Stable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v)](//packagist.org/packages/gabbanaesteban/mastermind) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/gabbanaesteban/mastermind/tests?label=tests) [![Total Downloads](https://poser.pugx.org/gabbanaesteban/mastermind/downloads)](//packagist.org/packages/gabbanaesteban/mastermind) [![Latest Unstable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v/unstable)](//packagist.org/packages/gabbanaesteban/mastermind) [![License](https://poser.pugx.org/gabbanaesteban/mastermind/license)](//packagist.org/packages/gabbanaesteban/mastermind)
+[![Latest Stable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v)](//packagist.org/packages/gabbanaesteban/mastermind) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/gabbanaesteban/mastermind/tests?label=tests)](//github.com/gabbanaesteban/mastermind/actions) [![Total Downloads](https://poser.pugx.org/gabbanaesteban/mastermind/downloads)](//packagist.org/packages/gabbanaesteban/mastermind) [![Latest Unstable Version](https://poser.pugx.org/gabbanaesteban/mastermind/v/unstable)](//packagist.org/packages/gabbanaesteban/mastermind) [![License](https://poser.pugx.org/gabbanaesteban/mastermind/license)](LICENSE.md)
 
 This package is an implementation of the game Mastermind.
 
