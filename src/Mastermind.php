@@ -142,9 +142,7 @@ class Mastermind
      */
     protected function hasValidColors(array $code): bool
     {
-        $filter = fn (string $color): bool => \in_array($color, self::VALID_COLORS, true);
-        $validColors = array_filter($code, $filter);
-
+        $validColors = array_intersect($code, self::VALID_COLORS);
         return \count($validColors) === \count($code);
     }
 }
