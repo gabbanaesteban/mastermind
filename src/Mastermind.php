@@ -143,7 +143,7 @@ class Mastermind
     protected function hasValidColors(array $code): bool
     {
         $validColors = array_intersect($code, self::VALID_COLORS);
-        
+
         return \count($validColors) === \count($code);
     }
 }
