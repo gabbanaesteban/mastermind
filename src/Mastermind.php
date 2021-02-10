@@ -21,7 +21,7 @@ class Mastermind
      */
     public function __construct(array $code)
     {
-        $code = array_values($code);
+        $code = \array_values($code);
         $this->validateCodeOrFail($code);
         $this->code = $code;
     }
@@ -49,7 +49,7 @@ class Mastermind
      */
     public static function randomCode(): array
     {
-        return array_rand(
+        return \array_rand(
             array_flip(self::VALID_COLORS),
             self::CODE_LENGTH
         );
@@ -67,7 +67,7 @@ class Mastermind
      */
     public function getHints(array $guess): array
     {
-        $guess = array_values($guess);
+        $guess = \array_values($guess);
         $this->validateCodeOrFail($guess);
 
         if ($this->getCode() === $guess) {
@@ -82,7 +82,7 @@ class Mastermind
                 continue;
             }
 
-            $codeKey = array_search($color, $this->getCode());
+            $codeKey = \array_search($color, $this->getCode());
 
             if (false !== $codeKey && !isset($hints[$codeKey])) {
                 $hints[$codeKey] = Hint::WHITE;
@@ -124,7 +124,7 @@ class Mastermind
     protected function validateColorsOrFail(array $code): void
     {
         if (!$this->hasValidColors($code)) {
-            $validColorsAsString = implode(',', self::VALID_COLORS);
+            $validColorsAsString = \implode(',', self::VALID_COLORS);
             throw new \InvalidArgumentException("The code should have valid colors: $validColorsAsString");
         }
     }
@@ -142,7 +142,7 @@ class Mastermind
      */
     protected function hasValidColors(array $code): bool
     {
-        $validColors = array_intersect($code, self::VALID_COLORS);
+        $validColors = \array_intersect($code, self::VALID_COLORS);
 
         return \count($validColors) === \count($code);
     }
